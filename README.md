@@ -131,8 +131,8 @@ bash LVM/script/train/pretrain_stage4_hw.sh
 ### Contributors:
 Thank all our contributors for their efforts and warmly welcome new members to join in!
 
-<a href="https://github.com/zhuangshaobin/Video-GPT/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=zhuangshaobin/Video-GPT" />
+<a href="https://github.com/zhuangshaobin/video-gpt/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=zhuangshaobin/video-gpt" />
 </a>
 
 ## License
