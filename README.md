@@ -8,10 +8,7 @@
     <a href="https://arxiv.org/abs/2409.11340">
             <img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-2409.11340-b31b1b.svg">
     </a>
-    <a href="https://huggingface.co/spaces/Shitao/OmniGen">
-        <img alt="License" src="https://img.shields.io/badge/HF%20Demo-🤗-lightblue">
-    </a>
-    <a href="https://huggingface.co/Shitao/OmniGen-v1">
+    <a href="https://huggingface.co/GrayShine/Video-GPT">
         <img alt="Build" src="https://img.shields.io/badge/HF%20Model-🤗-yellow">
     </a>    
     <a href="https://replicate.com/chenxwh/omnigen">
