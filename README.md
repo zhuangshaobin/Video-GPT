@@ -55,16 +55,18 @@ You can see details in our [paper](https://arxiv.org/abs/2409.11340).
 
 ## 4. What Can Video-GPT do?
 
-OmniGen is a video self-supervised generative pre-trained model that you can use to perform various tasks, including but not limited to text-to-image generation, subject-driven generation, Identity-Preserving Generation, image editing, and image-conditioned generation. **OmniGen doesn't need additional plugins or operations, it can automatically identify the features (e.g., required object, human pose, depth mapping) in input images according to the text prompt.**
-We showcase some examples in [inference.ipynb](inference.ipynb). And in [inference_demo.ipynb](inference_demo.ipynb), we show an interesting pipeline to generate and modify an image.
+Video-GPT is a video self-supervised generative pre-trained model that you can use to perform various tasks. It can be directly applied to video prediction, or fine-tuned to tasks such as video object segmentation and image animation with very little data. Its intermediate layer features are also suitable for representation learning. 
 
-Here is the illustrations of OmniGen's capabilities: 
-- You can control the image generation flexibly via OmniGen
-![demo](./imgs/demo_cases.png)
-- Referring Expression Generation: You can input multiple images and use simple, general language to refer to the objects within those images. OmniGen can automatically recognize the necessary objects in each image and generate new images based on them. No additional operations, such as image cropping or face detection, are required.
-![demo](./imgs/referring.png)
+Here is the illustrations of Video-GPT's capabilities: 
+- Powerful world modeling capabilities
+![demo](./imgs/phys_visual.png)
+- Based on the pre-trained Video-GPT, we continue training on class to video and text to video tasks, and can achieve better results than training from scratch.
+![demo](./imgs/c2v_gen.png)
+![demo](./imgs/t2v_gen.png)
 
-If you are not entirely satisfied with certain functionalities or wish to add new capabilities, you can try [fine-tuning OmniGen](#6-finetune).
+- By fine-tuning with a small amount of data, Video-GPT can also achieve good generalization performance on downstream tasks.
+![demo](./imgs/anim.png)
+![demo](./imgs/seg.png)
 
 
 
