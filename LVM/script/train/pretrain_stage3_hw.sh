@@ -34,6 +34,7 @@ torchrun --nnodes=$NNODES \
     --model_name_or_path "/path/to/Video-GPT/huggingface" \
     --results_dir "/path/to/experiment/stage1" \
     --video_dir_path "/path/to/pretrain/video/data" \
+    --model_ckpt "/path/to/pretrain/stage2/model/ckpt" \
     --sequence_parallel_size=1 \
     --gradient_accumulation_steps=1 \
     --batch_size_per_device=1 \
