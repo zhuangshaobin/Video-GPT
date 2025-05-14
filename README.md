@@ -1,4 +1,4 @@
-<h1 align="center">OmniGen: Unified Image Generation</h1>
+<h1 align="center">Video-GPT via Next Clip Diffusion</h1>
 
 
 <p align="center">
