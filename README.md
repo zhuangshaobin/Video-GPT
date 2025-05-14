@@ -16,10 +16,11 @@
 <h4 align="center">
     <p>
         <a href=#1-news>News</a> |
+        <a href=#2-overview>News</a> |
         <a href=#3-methodology>Methodology</a> |
-        <a href=#4-what-can-omnigen-do>Capabilities</a> |
+        <a href=#4-what-can-video-gpt-do>Capabilities</a> |
         <a href=#5-quick-start>Quick Start</a> |
-        <a href="#6-finetune">Finetune</a> |
+        <a href="#6-training">Finetune</a> |
         <a href="#license">License</a> |
         <a href="#citation">Citation</a>
     <p>
@@ -88,6 +89,7 @@ If you are using NPUs from Huawei, then
 bash env_hw.sh
 ```
 
+
 Then you can use the following command to extract the first few frames of the video for video prediction.
 If you are using GPUs from NVIDIA, then
 ```bash
@@ -99,30 +101,32 @@ bash LVM/script/inference/inference_hw.sh
 ```
 
 
-## 6. Finetune
-We provide a training script `train.py` to fine-tune OmniGen. 
-Here is a toy example about LoRA finetune:
+## 6. Training
+We provide our 4 stage training script to train or fine-tune Video-GPT. 
+If you are using GPUs from NVIDIA, then
 ```bash
-accelerate launch --num_processes=1 train.py \
-    --model_name_or_path Shitao/OmniGen-v1 \
-    --batch_size_per_device 2 \
-    --condition_dropout_prob 0.01 \
-    --lr 1e-3 \
-    --use_lora \
-    --lora_rank 8 \
-    --json_file ./toy_data/toy_subject_data.jsonl \
-    --image_path ./toy_data/images \
-    --max_input_length_limit 18000 \
-    --keep_raw_resolution \
-    --max_image_size 1024 \
-    --gradient_accumulation_steps 1 \
-    --ckpt_every 10 \
-    --epochs 200 \
-    --log_every 1 \
-    --results_dir ./results/toy_finetune_lora
+# 1-stage pre-training
+bash LVM/script/train/pretrain_stage1_nv.sh
+# 2-stage pre-training
+bash LVM/script/train/pretrain_stage2_nv.sh
+# 3-stage pre-training
+bash LVM/script/train/pretrain_stage3_nv.sh
+# 4-stage pre-training
+bash LVM/script/train/pretrain_stage4_nv.sh
 ```
 
-Please refer to [docs/fine-tuning.md](docs/fine-tuning.md) for more details (e.g. full finetune).
+If you are using NPUs from Huawei, then
+```bash
+# 1-stage pre-training
+bash LVM/script/train/pretrain_stage1_hw.sh
+# 2-stage pre-training
+bash LVM/script/train/pretrain_stage2_hw.sh
+# 3-stage pre-training
+bash LVM/script/train/pretrain_stage3_hw.sh
+# 4-stage pre-training
+bash LVM/script/train/pretrain_stage4_hw.sh
+```
+
 
 ### Contributors:
 Thank all our contributors for their efforts and warmly welcome new members to join in!
