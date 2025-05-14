@@ -11,9 +11,6 @@
     <a href="https://huggingface.co/GrayShine/Video-GPT">
         <img alt="Build" src="https://img.shields.io/badge/HF%20Model-🤗-yellow">
     </a>    
-    <a href="https://replicate.com/chenxwh/omnigen">
-        <img alt="Build" src="https://replicate.com/chenxwh/omnigen/badge">
-    </a>
 </p>
 
 <h4 align="center">
