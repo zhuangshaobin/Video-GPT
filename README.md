@@ -21,6 +21,7 @@
         <a href=#4-what-can-video-gpt-do>Capabilities</a> |
         <a href=#5-quick-start>Quick Start</a> |
         <a href="#6-training">Finetune</a> |
+        <a href="#acknowledgement">Acknowledgement</a> |
         <a href="#license">License</a> |
         <a href="#citation">Citation</a>
     <p>
@@ -134,6 +135,9 @@ Thank all our contributors for their efforts and warmly welcome new members to j
 <a href="https://github.com/zhuangshaobin/video-gpt/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=zhuangshaobin/video-gpt" />
 </a>
+
+## Acknowledgement
+We built our repository based on the repository of [OmniGen](https://github.com/VectorSpaceLab/OmniGen), which also did a great job!
 
 ## License
 This repo is licensed under the [MIT License](LICENSE). 
