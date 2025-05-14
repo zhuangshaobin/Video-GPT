@@ -17,8 +17,9 @@
     <p>
         <a href=#1-news>News</a> |
         <a href=#3-methodology>Methodology</a> |
-        <a href=#4-quick-start>Quick Start</a> |
-        <a href="#5-finetune">Finetune</a> |
+        <a href=#4-what-can-omnigen-do>Capabilities</a> |
+        <a href=#5-quick-start>Quick Start</a> |
+        <a href="#6-finetune">Finetune</a> |
         <a href="#license">License</a> |
         <a href="#citation">Citation</a>
     <p>
@@ -38,6 +39,8 @@ Video-GPT is a video self-supervised generative pre-trained model which treats v
 
 Previous works on visual generation relies heavily on supervisory signals from textual modalities (such as Sora, WanX, HunyuanVideo, MovieGen). However, vision, as a natural ability of human beings, was formed even earlier than language. Therefore, we believe that the information of the visual modality itself is sufficient to support the model to model the world.
 
+![demo](./imgs/teaser.png)
+
 In addition, compared with the previous model architecture with many special designs for diffusion model (e.g., UNet, DiT, MM-DiT), we adopted the simplest vanilla transformer architecture. On the one hand, it is more conducive to the exploration of scaling law in the future. On the other hand, it is also more convenient for the community to follow up.
 
 Due to the limited resources, Video-GPT still has room for improvement. We will continue to optimize it, and hope it inspires more universal video generative foundation models. 
@@ -50,8 +53,22 @@ If you have any questions, ideas, or interesting tasks you want Video-GPT to acc
 You can see details in our [paper](https://arxiv.org/abs/2409.11340). 
 
 
+## 4. What Can Video-GPT do?
 
-## 4. Quick Start
+OmniGen is a video self-supervised generative pre-trained model that you can use to perform various tasks, including but not limited to text-to-image generation, subject-driven generation, Identity-Preserving Generation, image editing, and image-conditioned generation. **OmniGen doesn't need additional plugins or operations, it can automatically identify the features (e.g., required object, human pose, depth mapping) in input images according to the text prompt.**
+We showcase some examples in [inference.ipynb](inference.ipynb). And in [inference_demo.ipynb](inference_demo.ipynb), we show an interesting pipeline to generate and modify an image.
+
+Here is the illustrations of OmniGen's capabilities: 
+- You can control the image generation flexibly via OmniGen
+![demo](./imgs/demo_cases.png)
+- Referring Expression Generation: You can input multiple images and use simple, general language to refer to the objects within those images. OmniGen can automatically recognize the necessary objects in each image and generate new images based on them. No additional operations, such as image cropping or face detection, are required.
+![demo](./imgs/referring.png)
+
+If you are not entirely satisfied with certain functionalities or wish to add new capabilities, you can try [fine-tuning OmniGen](#6-finetune).
+
+
+
+## 5. Quick Start
 
 
 ### Using OmniGen
@@ -138,7 +155,7 @@ To use with Google Colab, please use the following command:
 !python app.py --share
 ```
 
-## 5. Finetune
+## 6. Finetune
 We provide a training script `train.py` to fine-tune OmniGen. 
 Here is a toy example about LoRA finetune:
 ```bash
