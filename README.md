@@ -73,89 +73,31 @@ Here is the illustrations of Video-GPT's capabilities:
 ## 5. Quick Start
 
 
-### Using OmniGen
+### Using Video-GPT
 Install via Github:
 ```bash
-git clone https://github.com/VectorSpaceLab/OmniGen.git
-cd OmniGen
-pip install -e .
+git clone https://github.com/zhuangshaobin/Video-GPT.git
+cd Video-GPT
 ```
-
-You also can create a new environment to avoid conflicts:
+If you are using GPUs from NVIDIA, then
 ```bash
-# Create a python 3.10.13 conda env (you could also use virtualenv)
-conda create -n omnigen python=3.10.13
-conda activate omnigen
-
-# Install pytorch with your CUDA version, e.g.
-pip install torch==2.3.1+cu118 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
-
-git clone https://github.com/VectorSpaceLab/OmniGen.git
-cd OmniGen
-pip install -e .
+bash env_nv.sh
+```
+If you are using NPUs from Huawei, then
+```bash
+bash env_hw.sh
 ```
 
-Here are some examples:
-```python
-from OmniGen import OmniGenPipeline
-
-pipe = OmniGenPipeline.from_pretrained("Shitao/OmniGen-v1")  
-# Note: Your local model path is also acceptable, such as 'pipe = OmniGenPipeline.from_pretrained(your_local_model_path)', where all files in your_local_model_path should be organized as https://huggingface.co/Shitao/OmniGen-v1/tree/main
-
-## Text to Image
-images = pipe(
-    prompt="A curly-haired man in a red shirt is drinking tea.", 
-    height=1024, 
-    width=1024, 
-    guidance_scale=2.5,
-    seed=0,
-)
-images[0].save("example_t2i.png")  # save output PIL Image
-
-## Multi-modal to Image
-# In the prompt, we use the placeholder to represent the image. The image placeholder should be in the format of <img><|image_*|></img>
-# You can add multiple images in the input_images. Please ensure that each image has its placeholder. For example, for the list input_images [img1_path, img2_path], the prompt needs to have two placeholders: <img><|image_1|></img>, <img><|image_2|></img>.
-images = pipe(
-    prompt="A man in a black shirt is reading a book. The man is the right man in <img><|image_1|></img>.",
-    input_images=["./imgs/test_cases/two_man.jpg"],
-    height=1024, 
-    width=1024,
-    guidance_scale=2.5, 
-    img_guidance_scale=1.6,
-    seed=0
-)
-images[0].save("example_ti2i.png")  # save output PIL image
+Then you can use the following command to extract the first few frames of the video for video prediction.
+If you are using GPUs from NVIDIA, then
+```bash
+bash LVM/script/inference/inference_nv.sh
 ```
-- If out of memory, you can set `offload_model=True`. If the inference time is too long when inputting multiple images, you can reduce the `max_input_image_size`.  For the required resources and the method to run OmniGen efficiently, please refer to [docs/inference.md#requiremented-resources](docs/inference.md#requiremented-resources).
-- For more examples of image generation, you can refer to [inference.ipynb](inference.ipynb) and [inference_demo.ipynb](inference_demo.ipynb)
-- For more details about the argument in inference, please refer to [docs/inference.md](docs/inference.md). 
-
-
-### Using Diffusers
-
-Coming soon.
-
-
-### Gradio Demo
-
-We construct an online demo in [Huggingface](https://huggingface.co/spaces/Shitao/OmniGen).
-
-For the local gradio demo, you need to install `pip install gradio spaces`, and then you can run:
-```python
-pip install gradio spaces
-python app.py
+If you are using NPUs from Huawei, then
+```bash
+bash LVM/script/inference/inference_hw.sh
 ```
 
-#### Use Google Colab
-To use with Google Colab, please use the following command:
-
-```
-!git clone https://github.com/VectorSpaceLab/OmniGen.git
-%cd OmniGen
-!pip install -e .
-!pip install gradio spaces
-!python app.py --share
-```
 
 ## 6. Finetune
 We provide a training script `train.py` to fine-tune OmniGen. 
