@@ -6,6 +6,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.12489-b31b1b.svg)](https://arxiv.org/abs/2505.12489)
 [![Project Page](https://img.shields.io/badge/Project_Page-Video--GPT-green)](https://zhuangshaobin.github.io/Video-GPT.github.io/)
+[![Github](https://img.shields.io/badge/Github-Video--GPT-blue)](https://github.com/zhuangshaobin/Video-GPT)
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/GrayShine/Video-GPT)
 
 </div>
@@ -50,7 +51,7 @@ If you have any questions, ideas, or interesting tasks you want Video-GPT to acc
 
 ## 3. Methodology
 
-You can see details in our [paper](https://arxiv.org/abs/2409.11340). 
+You can see details in our [paper](https://arxiv.org/abs/2505.12489). 
 
 
 ## 4. What Can Video-GPT do?
