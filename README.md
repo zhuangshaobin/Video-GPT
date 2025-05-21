@@ -100,7 +100,7 @@ bash LVM/script/inference/inference_hw.sh
 ```
 
 
-## 6. Training
+## 6. Pre-Training
 We provide our 4 stage training script to train or fine-tune Video-GPT. 
 If you are using GPUs from NVIDIA, then
 ```bash
@@ -126,13 +126,6 @@ bash LVM/script/train/pretrain_stage3_hw.sh
 bash LVM/script/train/pretrain_stage4_hw.sh
 ```
 
-
-### Contributors:
-Thank all our contributors for their efforts and warmly welcome new members to join in!
-
-<a href="https://github.com/zhuangshaobin/video-gpt/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=zhuangshaobin/video-gpt" />
-</a>
 
 ## Acknowledgement
 We built our repository based on the repository of [OmniGen](https://github.com/VectorSpaceLab/OmniGen), which also did a great job!
