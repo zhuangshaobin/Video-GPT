@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2401.09414-b31b1b.svg)](https://arxiv.org/abs/2401.09414)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.12489-b31b1b.svg)](https://arxiv.org/abs/2505.12489)
 [![Project Page](https://img.shields.io/badge/Project_Page-Video--GPT-green)](https://zhuangshaobin.github.io/Video-GPT.github.io/)
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/GrayShine/Video-GPT)
 
