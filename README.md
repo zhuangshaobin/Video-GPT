@@ -1,17 +1,15 @@
 <h1 align="center">Video-GPT via Next Clip Diffusion</h1>
 
 
-<p align="center">
-    <a href="https://vectorspacelab.github.io/OmniGen/">
-        <img alt="Build" src="https://img.shields.io/badge/Project%20Page-OmniGen-yellow">
-    </a>
-    <a href="https://arxiv.org/abs/2409.11340">
-            <img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-2409.11340-b31b1b.svg">
-    </a>
-    <a href="https://huggingface.co/GrayShine/Video-GPT">
-        <img alt="Build" src="https://img.shields.io/badge/HF%20Model-🤗-yellow">
-    </a>    
-</p>
+
+<div align="center">
+
+[![arXiv](https://img.shields.io/badge/arXiv-2401.09414-b31b1b.svg)](https://arxiv.org/abs/2401.09414)
+[![Project Page](https://img.shields.io/badge/Project_Page-Video--GPT-green)](https://zhuangshaobin.github.io/Video-GPT.github.io/)
+[![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/GrayShine/Video-GPT)
+
+</div>
+
 
 <h4 align="center">
     <p>
@@ -146,15 +144,10 @@ This repo is licensed under the [MIT License](LICENSE).
 ## Citation
 If you find this repository useful, please consider giving a star ⭐ and citation
 ```
-@article{xiao2024omnigen,
-  title={Omnigen: Unified image generation},
-  author={Xiao, Shitao and Wang, Yueze and Zhou, Junjie and Yuan, Huaying and Xing, Xingrun and Yan, Ruiran and Wang, Shuting and Huang, Tiejun and Liu, Zheng},
-  journal={arXiv preprint arXiv:2409.11340},
-  year={2024}
+@article{zhuang2025videogptclipdiffusion,
+  title={Video-GPT via Next Clip Diffusion},
+  author={Shaobin Zhuang and Zhipeng Huang and Ying Zhang and Fangyikang Wang and Canmiao Fu and Binxin Yang and Chong Sun and Chen Li and Yali Wang},
+  journal={arXiv preprint arXiv:2505.12489},
+  year={2025}
 }
 ```
-
-
-
-
-
