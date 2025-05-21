@@ -40,7 +40,7 @@ torchrun --nnodes=$NNODES \
     --batch_size_per_device=1 \
     --mixed_precision "bf16" \
     --report_to "tensorboard" \
-    --lr_warmup_steps 176000 \
+    --lr_warmup_steps 320000 \
     --lr_scheduler "constant_with_warmup" \
     --max_image_size 320 \
     --keep_raw_resolution \
