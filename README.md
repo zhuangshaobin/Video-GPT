@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[Shaobin Zhuang](https://github.com/zhuangshaobin), [Zhipeng Huang], [Ying Zhang](https://scholar.google.com.hk/citations?hl=zh-CN&user=R_psgxkAAAAJ&view_op=list_works), [Fangyikang Wang](https://github.com/zituitui), [Canmiao Fu], [Binxin Yang], [Chong Sun](https://scholar.google.com.hk/citations?hl=zh-CN&user=-GLJ0D4AAAAJ&view_op=list_works&sortby=pubdate), [Chen Li], [Yali Wang†](https://scholar.google.com/citations?user=hD948dkAAAAJ)
+[Shaobin Zhuang](https://github.com/zhuangshaobin), [Zhipeng Huang](), [Ying Zhang](https://scholar.google.com.hk/citations?hl=zh-CN&user=R_psgxkAAAAJ&view_op=list_works), [Fangyikang Wang](https://github.com/zituitui), [Canmiao Fu](), [Binxin Yang](), [Chong Sun](https://scholar.google.com.hk/citations?hl=zh-CN&user=-GLJ0D4AAAAJ&view_op=list_works&sortby=pubdate), [Chen Li](), [Yali Wang†](https://scholar.google.com/citations?user=hD948dkAAAAJ)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.12489-b31b1b.svg)](https://arxiv.org/abs/2505.12489)
 [![Project Page](https://img.shields.io/badge/Project_Page-Video--GPT-green)](https://zhuangshaobin.github.io/Video-GPT.github.io/)
