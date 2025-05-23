@@ -21,7 +21,7 @@
         <a href=#3-methodology>Methodology</a> |
         <a href=#4-what-can-video-gpt-do>Capabilities</a> |
         <a href=#5-quick-start>Quick Start</a> |
-        <a href="#6-training">Finetune</a> |
+        <a href="#6-training">Pre-Training</a> |
         <a href="#acknowledgement">Acknowledgement</a> |
         <a href="#license">License</a> |
         <a href="#citation">Citation</a>
