@@ -30,10 +30,10 @@ torchrun --nnodes=$NNODES \
     --width 320 \
     --height 176 \
     --img_guidance_scale=1.5 \
-    --gen_nums 24 24 24 24 \
+    --gen_nums 24 24 \
     --max_input_image_size=320 \
     --clean_image_noise_level=0 \
-    --clean_image_num=8 \
+    --clean_image_num=56 \
     --max_frame_window=80 \
 
 
